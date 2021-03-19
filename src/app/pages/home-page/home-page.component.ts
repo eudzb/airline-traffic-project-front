@@ -59,8 +59,8 @@ export class HomePageComponent implements OnInit {
         value: 9705
       },
     ],
-    xAxisLabel: 'Villes',
-    yAxisLabel: 'Nombre de vols',
+    xAxisLabel: 'Nombre de vols',
+    yAxisLabel: 'Villes',
     colorScheme: {
       domain: ['#fab1a0', '#e17055', '#ffeaa7']
     }
