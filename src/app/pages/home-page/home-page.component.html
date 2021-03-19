@@ -1,0 +1,36 @@
+<div class="mb-5">
+  <app-graph [data]="firstData.data"
+             [colorScheme]="firstData.colorScheme"
+             [title]="firstData.title"
+             [xLabel]="firstData.xAxisLabel"
+             [yLabel]="firstData.yAxisLabel"
+             [graphStyle]="'bar-horizontal'"
+  ></app-graph>
+</div>
+
+<div>
+  <app-graph [data]="firstData.data"
+             [colorScheme]="firstData.colorScheme"
+             [title]="'Pourcentage du nombre de vols s\'appliquant uniquement aux 10 villes précédentes :'"
+             [graphStyle]="'advanced-pie-chart'"
+  ></app-graph>
+</div>
+
+<div class="mb-5">
+  <app-graph [data]="secondData.data"
+             [colorScheme]="secondData.colorScheme"
+             [title]="secondData.title"
+             [xLabel]="secondData.xAxisLabel"
+             [yLabel]="secondData.yAxisLabel"
+             [graphStyle]="'bar-vertical'"
+  ></app-graph>
+</div>
+
+<div class="mb-5">
+  <app-graph [data]="secondData.data"
+             [colorScheme]="secondData.colorScheme"
+             [xLabel]="secondData.xAxisLabel"
+             [yLabel]="secondData.yAxisLabel"
+             [graphStyle]="'pie-grid'"
+  ></app-graph>
+</div>

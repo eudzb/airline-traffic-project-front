@@ -1,0 +1,51 @@
+<div class="py-5 container">
+  <span class="h4 font-weight-normal text-dark">
+    {{title}}
+  </span>
+  <div class="my-5">
+    <ngx-charts-bar-vertical
+      *ngIf="graphStyle === 'bar-vertical'"
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="data"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xLabel"
+      [yAxisLabel]="yLabel">
+    </ngx-charts-bar-vertical>
+
+    <ngx-charts-bar-horizontal
+      *ngIf="graphStyle === 'bar-horizontal'"
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="data"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xLabel"
+      [yAxisLabel]="yLabel">
+    </ngx-charts-bar-horizontal>
+
+    <ngx-charts-advanced-pie-chart
+      *ngIf="graphStyle === 'advanced-pie-chart'"
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="data">
+    </ngx-charts-advanced-pie-chart>
+
+    <ngx-charts-pie-grid
+      *ngIf="graphStyle === 'pie-grid'"
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="data">
+    </ngx-charts-pie-grid>
+
+  </div>
+</div>
